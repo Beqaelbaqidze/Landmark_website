@@ -4,63 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
     <title>LandMark</title>
 </head>
 <body>
     <header>
         <img src="assets/20230510_121757_0002.png" alt="LandMark" width="30px" height="30px">
         <div class="btn">
-            <img src="assets/Btn/menu.svg" alt="Menu" class="menu">
-            <img src="assets/Btn/close.svg" alt="Close" class="close">
+            <img src="assets/Btn/menu.svg" alt="Menu" class="menu" id="menu" onclick="navbar()">
+            <img src="assets/Btn/close.svg" alt="Close" class="close" id="close" onclick="navbar()">
         </div>
     </header>
-    <nav class="top-nav">
-        <h3>Home</h3>
-        <h3>Service</h3>
-        <h3>Projects</h3>
-        <h3>Contact</h3>
+    <nav class="top-nav" id="top-nav" style="visibility: hidden;">
+       <a href="Service.html"><h3>Service</h3></a> 
+       <a href="Projects.html"><h3>Projects</h3></a> 
+       <a href="#comunity"><h3>Contact</h3></a> 
     </nav>
-    <section class="section-news">
-        <div class="slider">
-            <div class="images">
-                <input type="radio" name="slide" id="img1" checked>
-                <input type="radio" name="slide" id="img2">
-                <input type="radio" name="slide" id="img3">
-                <input type="radio" name="slide" id="img4">
-    
-                <img src="./assets/1.jpg" class="m1" alt="img1">
-                <img src="./assets/2.jpg" class="m2" alt="img2">
-                <img src="./assets/3.jpg" class="m3" alt="img3">
-                <img src="./assets/4.jpg" class="m4" alt="img4">
+    <section class="container">
+        <h1>სიახლეები</h1>
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img src="assets/20230510_121757_0001.png" alt="" id="slide-1">
+                <img src="assets/20230510_121757_0001.png" alt="" id="slide-2">
+                <img src="assets/20230510_121757_0001.png" alt="" id="slide-3">
             </div>
-            <div class="dots">
-                <label for="img1"></label>
-                <label for="img2"></label>
-                <label for="img3"></label>
-                <label for="img4"></label>
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
             </div>
-        </div>
+        </div>   
     </section>
 
-    <section>
-
+    <section class="aboutus">
+       <h1>ჩვენს შესახებ / About Us</h1> 
+       <h2>ვინ ვართ ჩვენ / Who We Are</h2> 
+       <p>
+        &nbsp &nbsp ჩვენ უფრო მეტი ვართ, ვიდრე გეოდეზიური კომპანია. ჩვენი კომპანია არის სანდო
+        პარტნიორი, რომელის მიზანია პროექტების შესრულებისას მაღალი სიზუსტისა და
+        მომსახურების ხარისხის უზრუნველყოფა. </p>
+       <p> &nbsp &nbsp კომპანია „ლენდ მენეჯმენტი“ შეიქმნა 2008 წელს და მომხმარებლებისთვის
+        უზრუნველყოფს უძრავი ქონების რუკების, საკადასტრო/ტოპოგრაფიული ნახაზების და
+        საინჟინრო გეოდეზიური სერვისების მიწოდებას. </p>
+        <p> &nbsp &nbsp ჩვენ გვყავს პროფესიონალი გეოდეზისტები, სერტიფიცირებული ამზომველები, GIS და
+        CAD სისტემების სპეციალისტები რომელთა მუშაობის 20 წელზე მეტი გამოცდილება არის
+        სხვადასხვა სირთულის პროექტების სიზუსტისა და წარმატებით განხორციელების
+        გარანტია. </p>
+        
+        <h2>რას ვაკეთებთ / What We Do</h2> 
+        <p> &nbsp &nbsp ჩვენი ძირითადი საქმიანობა საველე გეოდეზიური სამუშაოების წარმოება და შესაბამისი
+        რუკების, ციფრულ-რელიეფური სამგანზომილებიანი მოდელების აგება და ნახაზების
+        დამზადებაა. </p>
+        <p> &nbsp &nbsp საველე გეოდეზიური სამუშაოებისთვის ვიყენებთ მაღალი ხარისხის და სიზუსტის,
+        მსოფლიოში საამზომველო ინსტრუმენტების წარმოების ლიდერი კომპანიების
+        ინსტრუმენტებს, როგორიცაა GPS Net rover, Robotic Total Station, ლაზერული მანძილმზომი,
+        საამზომველო დრონი და 3D ლაზერული სკანერი. </p>
+        </p>
     </section>
     <footer>
-        <img src="assets/20230510_121757_0002.png" alt="LandMark" width="30px" height="30px">
+        <!-- <img src="assets/20230510_121757_0002.png" alt="LandMark" width="30px" height="30px">
         <nav>
-            <h3>Home</h3>
-            <h3>Service</h3>
-            <h3>Projects</h3>
+            <a href=""><h3>Home</h3></a> 
+            <a href=""><h3>Service</h3></a> 
+            <a href=""><h3>Projects</h3></a> 
         </nav>
-        <div class="comunity">
-            <p><img src="assets/Btn/facebook.svg" alt="" height="20px" width="20px"> <span>about us</span> </p>
-            <p><img src="assets/Btn/phone-call-icon.svg" alt="" height="20px" width="20px"> <span>591 - 06 - 73 - 02</span> </p>
-            <p><img src="assets/Btn/mail.svg" alt="" height="20px" width="20px"> <span>asd@gmail.com</span> </p>
-            
+        <hr> -->
+        <div class="comunity" id="comunity">
+            <a href=""><img src="assets/Btn/facebook.svg" alt="" height="20px" width="20px"> <p>Facebook</p> </a>
+            <a href=""><img src="assets/Btn/phone-call-icon.svg" alt="" height="20px" width="20px"> <p>512345698</p> </a>
+            <a href=""><img src="assets/Btn/mail.svg" alt="" height="20px" width="20px"> <p>asd@gmail.com</p> </a>
+            <h5>Copyright 2023. All Rights Reserved</h5>
         </div>
-       
+        
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>

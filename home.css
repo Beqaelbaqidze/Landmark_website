@@ -1,0 +1,40 @@
+.aboutus{
+    padding: 32px 24px;
+    background: #F2EAE2;
+}
+.aboutus h1{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    /* or 125% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.aboutus h2{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    margin: 18px auto ;
+    /* identical to box height, or 139% */
+    text-align: center;
+    color: #000000;
+}
+.aboutus p{
+    margin: auto;
+    max-width: 600px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    /* or 167% */
+    color: #000000;
+
+    mix-blend-mode: normal;
+    opacity: 0.6;
+}
