@@ -66,7 +66,7 @@ header{
 }
 .slider-wrapper{
     position: relative;
-    width: 100%;
+    max-width: 950px;
     margin: 0 auto;
 }
 .slider{
@@ -75,11 +75,12 @@ header{
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;  
+    overflow: hidden;
 }
 .slider img{
     flex: 1 0 100%;
     scroll-snap-align: start;
-    object-fit: cover;
+    object-fit: contain;
 }
 .slider-nav{
     display: flex;
