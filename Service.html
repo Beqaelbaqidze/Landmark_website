@@ -4,47 +4,116 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="service.css">
     <title>Service</title>
 </head>
 <body>
     <header>
-        <img src="assets/20230510_121757_0002.png" alt="LandMark" width="30px" height="30px">
+        <img src="assets/20230510_121757_0002.png" alt="LandMark" class="logo">
         <div class="btn">
             <img src="assets/Btn/menu.svg" alt="Menu" class="menu" id="menu" onclick="navbar()">
             <img src="assets/Btn/close.svg" alt="Close" class="close" id="close" onclick="navbar()">
         </div>
+        <nav class="top-nav" id="top-nav" style="visibility: hidden;">
+            <a href="index.html"><h3>მთავარი</h3></a> 
+            <a href="Projects.html"><h3>პროექტები</h3></a> 
+            <a href="#comunity"><h3>კონტაქტი</h3></a> 
+         </nav>
     </header>
-    <nav class="top-nav" id="top-nav" style="visibility: hidden;">
-       <a href=""><h3>Home</h3></a> 
-       <a href=""><h3>Service</h3></a> 
-       <a href=""><h3>Projects</h3></a> 
-       <a href=""><h3>Contact</h3></a> 
-    </nav>
-    <section class="section-news">
-        <div class="slider">
-            
-        </div>
+    
+    <section class="container">
+        <h1>სიახლე</h1>
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img src="assets/20230510_121757_0001.png" alt="" id="slide-1">
+                <img src="assets/20230510_121757_0001.png" alt="" id="slide-2">
+                <img src="assets/20230510_121757_0001.png" alt="" id="slide-3">
+            </div>
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+            </div>
+        </div>   
     </section>
 
-    <section>
-
+    <section class="service-container">
+        <div class="geodesy serv">
+            <img src="assets/service/PNG/geodesy.png" alt="img1">
+            <div>
+                <h1>საინჟინრო გეოდეზია</h1>
+                <ul>
+                    <li>მაღალი სიზუსტის საყრდენი წერტილების შექმნა</li>
+                    <li>მშენებლობის ყველა ეტაპზე პროექტის ღერძების წერტილების იდენტიფიცირება და ნატურაში გადატანა</li>
+                    <li>მშენებლობის გეომეტრიული პარამეტრების მონიტორინგი და შესაბამისი დასკვნის მომზადება</li>
+                </ul>
+            </div>
+        </div>
+        <div class="topography serv">
+            <img src="assets/service/PNG/topog.png" alt="img2">
+            <div>
+                <h1>ტოპოგრაფია</h1>
+                <ul>
+                    <li>სხვადასხვა მასშტაბის ტოპოგრაფიული აზომვები და შესაბამისი რუკების დამზადება</li>
+                    <li>ციფრული რელიეფური მოდელის შექმნა, ჭრილების ვიზუალიზაცია, მოცულობის და სხვა პარამეტრების ანგარიში</li>
+                </ul>
+            </div>
+        </div>
+        <div class="cadastre serv">
+            <img src="assets/service/PNG/kadast.png" alt="img3">
+            <div>
+                <h1>მიწის კადასტრი</h1>
+                <ul>
+                    <li>საკადასტრო აზომვითი სამუშაოები და შესაბმისი ნახაზის დამზადება საჯარო რეესტრის მოთხოვნების შესაბამისად</li>
+                    <li>შიდა საამზომველო სამუშაოები და შესაბმისი ნახაზის დამზადება</li>
+                    <li>შენობის ფასადების აგეგმვა და ნახაზის დამზადება</li>
+                </ul>
+            </div>
+        </div>
+        <div class="Cartography serv">
+            <img src="assets/service/PNG/kartograf.png" alt="img4">
+            <div>
+                <h1>კარტოგრაფია</h1>
+                <ul>
+                    <li>თემატური რუკების დამზადება</li>
+                    <li>ინტერაქტიული ონლაინ რუკების შექმნა</li>
+                </ul>
+            </div>
+        </div>
+        <div class="geoinformatics serv">
+            <img src="assets/service/PNG/geoinf.png" alt="img5">
+            <div>
+                <h1>გეოინფორმატიკა</h1>
+                <ul>
+                    <li>გეოინფორმაციული სისტემების დანერგვა</li>
+                    <li>გეოინფორმაციული ბაზების პროექტირება ორგანიზაციის მოთხოვნების შესაბამისად</li>
+                    <li>პროგრამირება</li>
+                </ul>
+            </div>
+        </div>
+        <div class="3dmodel serv"> 
+            <img src="assets/service/PNG/3d_model.png" alt="img6">
+            <div>
+                <h1>3D მოდელირება, DTM, DSM, BIM</h1>
+                <ul>
+                    <li>ზედაპირისა თუ შენობა-ნაგებობის 3 განზომილებიანი ციფრული მოდელის შექმნა მაღალი სიზუსტით</li>
+                </ul>
+            </div>
+        </div>
     </section>
     <footer>
-        <img src="assets/20230510_121757_0002.png" alt="LandMark" width="30px" height="30px">
-        <nav>
-            <h3>Home</h3>
-            <h3>Service</h3>
-            <h3>Projects</h3>
-        </nav>
-        <div class="comunity">
-            <p><img src="assets/Btn/facebook.svg" alt="" height="20px" width="20px"> <span>about us</span> </p>
-            <p><img src="assets/Btn/phone-call-icon.svg" alt="" height="20px" width="20px"> <span>591 - 06 - 73 - 02</span> </p>
-            <p><img src="assets/Btn/mail.svg" alt="" height="20px" width="20px"> <span>asd@gmail.com</span> </p>
-            
+        <div class="comunity" id="comunity">
+            <a href=""><img src="assets/Btn/facebook.svg" alt="" height="20px" width="20px"> <p>Facebook</p> </a>
+            <a href=""><img src="assets/Btn/phone-call-icon.svg" alt="" height="20px" width="20px"> <p>512345698</p> </a>
+            <a href=""><img src="assets/Btn/mail.svg" alt="" height="20px" width="20px"> <p>asd@gmail.com</p> </a>
+            <h5>Copyright 2023. All Rights Reserved</h5>
         </div>
-       
+        
     </footer>
     <script src="index.js"></script>
 </body>
